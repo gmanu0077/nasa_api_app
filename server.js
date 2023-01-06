@@ -39,14 +39,14 @@ mongoose
   })
   .then(console.log("connected"));
 
-const user = require("./routes/user-routes");
+const user = require("./server/routes/user-routes");
 app.use("/api/user", user);
 
-// app.use(express.static(path.join(__dirname,'./client/build')))
-// app.get('*', function (req, res) {
-//   const index = path.join(__dirname, './client/build', 'index.html');
-//   res.sendFile(index);
-// });
+app.use(express.static(path.join(__dirname, './build')))
+app.get('*', function (req, res) {
+  const index = path.join(__dirname, './build', 'index.html');
+  res.sendFile(index);
+});
 
 app.listen(5000, (res, req) => {
   console.log("connecting.....");
