@@ -1,0 +1,30 @@
+body {
+  background-image: url('./component/bg.jpg');
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.signup {
+  background-color: rgba(226, 228, 228, 0.2);
+  margin-top: 15%;
+
+}
+
+.loginn {
+  background-color: rgba(226, 228, 228, 0.2);
+
+}
+
+
+
+form {
+
+  width: max-content;
+  height: max-content;
+}

@@ -1,0 +1,8 @@
+.dashboard {
+    margin-top: 5%;
+    width: max-content;
+    margin-left: 15%;
+    text-align: center;
+    background-color: rgba(207, 206, 205, 0.5);
+    color: #000;
+}
