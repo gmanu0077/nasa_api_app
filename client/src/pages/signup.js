@@ -24,7 +24,7 @@ class Signup extends Component {
       console.log("pass");
       alert("password should be greater than 6 letters");
     } else {
-      await axios.post("http://localhost:5000/api/user/add", {
+      await axios.post("/api/user/add", {
         username: this.state.name,
         password: this.state.pass,
         passwordVerify: this.state.verify,

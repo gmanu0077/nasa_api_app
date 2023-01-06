@@ -7,7 +7,7 @@ function AuthContextProvider(props) {
 
   async function getLoggedin(navigate) {
     const loggedinRes = await axios.get(
-      "http://localhost:5000/api/user/loggedIn"
+      "/api/user/loggedIn"
     );
 
     setLoggedin(loggedinRes.data);
