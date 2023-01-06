@@ -37,10 +37,10 @@ class Login extends Component {
       {
         username: this.state.name,
         password: this.state.pass,
-      },
-      {
-        withCredentials: true,
       }
+      // {
+      //   withCredentials: true,
+      // }
     )
 
 
