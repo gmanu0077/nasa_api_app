@@ -42,9 +42,9 @@ mongoose
 const user = require("./server/routes/user-routes");
 app.use("/api/user", user);
 
-app.use(express.static(path.join(__dirname, './build')))
+app.use(express.static(path.join(__dirname, './client/build')))
 app.get('*', function (req, res) {
-  const index = path.join(__dirname, './build', 'index.html');
+  const index = path.join(__dirname, './client/build', 'index.html');
   res.sendFile(index);
 });
 
