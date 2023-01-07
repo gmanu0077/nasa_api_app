@@ -6,6 +6,7 @@ import { createBrowserHistory } from "@remix-run/router";
 import Dashboard from './pages/dashboard';
 import { LoginWITHROUTER } from './pages/login';
 import { SignupWITHROUTER } from './pages/signup';
+import { DashboardLog } from './pages/dashboard';
 import './App.css'
 function App() {
   const history = createBrowserHistory();
@@ -18,7 +19,7 @@ function App() {
 
 
             <Route path="/signup" element={<SignupWITHROUTER />} />
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/dashboard" element={<DashboardLog />} />
 
           </Routes>
 
